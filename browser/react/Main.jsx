@@ -46,7 +46,6 @@ class Main extends React.Component {
       axios.get(`/api/albums/${albumId}`)
       .then(res => res.data)
       .then(album => {
-        console.log(album)
         this.setState({ selectedAlbum: album })
       }
       );

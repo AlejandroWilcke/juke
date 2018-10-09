@@ -12522,7 +12522,6 @@ var Main = function (_React$Component) {
       _axios2.default.get('/api/albums/' + albumId).then(function (res) {
         return res.data;
       }).then(function (album) {
-        console.log(album);
         _this2.setState({ selectedAlbum: album });
       });
     }
@@ -13785,9 +13784,7 @@ var Esqueleto = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Esqueleto.__proto__ || Object.getPrototypeOf(Esqueleto)).call(this, props));
 
-        _this.state = {
-            anda: 're piola'
-        };
+        _this.state = {};
         return _this;
     }
 
